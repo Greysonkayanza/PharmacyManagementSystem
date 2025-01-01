@@ -145,6 +145,12 @@ int main() {
             case 5:
                 pm.createPrescription();
                 break;
+            case 6:
+                pm.displayPrescriptions();
+                break;
+            case 0:
+                cout << "Exiting system. Goodbye!\n";
+                break;
             
         }
     } while (choice != 0);
