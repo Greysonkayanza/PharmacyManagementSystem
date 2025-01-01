@@ -5,3 +5,10 @@
 
 using namespace std;
 
+struct Drug {
+    int id;
+    string name;
+    double price;
+    int quantity;
+};
+
