@@ -136,6 +136,15 @@ int main() {
             case 2:
                 pm.displayDrugs();
                 break;
+            case 3:
+                pm.sellDrug();
+                break;
+            case 4:
+                pm.displaySales();
+                break;
+            case 5:
+                pm.createPrescription();
+                break;
             
         }
     } while (choice != 0);
