@@ -130,7 +130,14 @@ int main() {
         cin >> choice;
 
         switch (choice) {
+            case 1:
+                pm.addDrug();
+                break;
+            case 2:
+                pm.displayDrugs();
+                break;
             
+        }
     } while (choice != 0);
 
     return 0;
