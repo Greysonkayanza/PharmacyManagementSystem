@@ -113,3 +113,12 @@ public:
     }
 };
 
+int main() {
+    PharmacyManagement pm;
+    int choice;
+
+    
+}
+
+
+    
