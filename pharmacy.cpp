@@ -102,4 +102,14 @@ public:
         cout << "Prescription created successfully!\n";
     }
 
-   
+    void displayPrescriptions() {
+        for (const auto &prescription : prescriptions) {
+            cout << "Prescription ID: " << prescription.id << "\n";
+            cout << "Drugs:\n";
+            for (size_t i = 0; i < prescription.drugIds.size(); i++) {
+                cout << "  Drug ID: " << prescription.drugIds[i] << ", Quantity: " << prescription.quantities[i] << "\n";
+            }
+        }
+    }
+};
+
