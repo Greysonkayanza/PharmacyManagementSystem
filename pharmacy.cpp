@@ -75,4 +75,11 @@ public:
         cout << "Drug not found!\n";
     }
 
-   
+    void displaySales() {
+        cout << left << setw(10) << "Drug ID" << setw(15) << "Quantity Sold" << setw(15) << "Total Price" << endl;
+        for (const auto &sale : sales) {
+            cout << setw(10) << sale.drugId << setw(15) << sale.quantitySold << setw(15) << sale.totalPrice << endl;
+        }
+    }
+
+    
