@@ -82,4 +82,24 @@ public:
         }
     }
 
-    
+ void createPrescription() {
+        Prescription newPrescription;
+        newPrescription.id = prescriptionCounter++;
+        int numDrugs;
+        cout << "Enter number of drugs in the prescription: ";
+        cin >> numDrugs;
+
+        for (int i = 0; i < numDrugs; i++) {
+            int drugId, quantity;
+            cout << "Enter drug ID: ";
+            cin >> drugId;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            newPrescription.drugIds.push_back(drugId);
+            newPrescription.quantities.push_back(quantity);
+        }
+        prescriptions.push_back(newPrescription);
+        cout << "Prescription created successfully!\n";
+    }
+
+   
