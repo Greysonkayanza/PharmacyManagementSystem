@@ -22,4 +22,11 @@ struct Prescription {
     vector<int> drugIds;
     vector<int> quantities;
 };
+class PharmacyManagement {
+private:
+    vector<Drug> drugs;
+    vector<Sale> sales;
+    vector<Prescription> prescriptions;
+    int drugCounter = 1;
+    int prescriptionCounter = 1;
 
