@@ -129,7 +129,8 @@ int main() {
         cout << "Enter your choice: ";
         cin >> choice;
 
-       
+        switch (choice) {
+            
     } while (choice != 0);
 
     return 0;
