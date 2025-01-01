@@ -30,3 +30,19 @@ private:
     int drugCounter = 1;
     int prescriptionCounter = 1;
 
+public:
+    void addDrug() {
+        Drug newDrug;
+        newDrug.id = drugCounter++;
+        cout << "Enter drug name: ";
+        cin.ignore();
+        getline(cin, newDrug.name);
+        cout << "Enter drug price: ";
+        cin >> newDrug.price;
+        cout << "Enter drug quantity: ";
+        cin >> newDrug.quantity;
+        drugs.push_back(newDrug);
+        cout << "Drug added successfully!\n";
+    }
+
+   
