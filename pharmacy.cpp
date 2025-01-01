@@ -52,4 +52,27 @@ public:
         }
     }
 
-    
+    void sellDrug() {
+        int drugId, quantity;
+        cout << "Enter drug ID: ";
+        cin >> drugId;
+        cout << "Enter quantity to sell: ";
+        cin >> quantity;
+
+        for (auto &drug : drugs) {
+            if (drug.id == drugId) {
+                if (drug.quantity >= quantity) {
+                    drug.quantity -= quantity;
+                    double totalPrice = quantity * drug.price;
+                    sales.push_back({drugId, quantity, totalPrice});
+                    cout << "Sale successful! Total Price: " << totalPrice << "\n";
+                } else {
+                    cout << "Insufficient stock!\n";
+                }
+                return;
+            }
+        }
+        cout << "Drug not found!\n";
+    }
+
+   
