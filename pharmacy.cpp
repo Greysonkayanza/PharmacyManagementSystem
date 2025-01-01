@@ -11,4 +11,9 @@ struct Drug {
     double price;
     int quantity;
 };
+struct Sale {
+    int drugId;
+    int quantitySold;
+    double totalPrice;
+};
 
