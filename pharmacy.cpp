@@ -17,3 +17,9 @@ struct Sale {
     double totalPrice;
 };
 
+struct Prescription {
+    int id;
+    vector<int> drugIds;
+    vector<int> quantities;
+};
+
