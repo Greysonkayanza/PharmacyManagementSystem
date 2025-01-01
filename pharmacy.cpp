@@ -117,7 +117,11 @@ int main() {
     PharmacyManagement pm;
     int choice;
 
-    
+    do {
+       
+    } while (choice != 0);
+
+    return 0;
 }
 
 
