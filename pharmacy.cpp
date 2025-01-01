@@ -45,4 +45,11 @@ public:
         cout << "Drug added successfully!\n";
     }
 
-   
+   void displayDrugs() {
+        cout << left << setw(10) << "ID" << setw(20) << "Name" << setw(10) << "Price" << setw(10) << "Quantity" << endl;
+        for (const auto &drug : drugs) {
+            cout << setw(10) << drug.id << setw(20) << drug.name << setw(10) << drug.price << setw(10) << drug.quantity << endl;
+        }
+    }
+
+    
