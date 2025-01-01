@@ -151,7 +151,8 @@ int main() {
             case 0:
                 cout << "Exiting system. Goodbye!\n";
                 break;
-            
+            default:
+                cout << "Invalid choice! Please try again.\n";
         }
     } while (choice != 0);
 
