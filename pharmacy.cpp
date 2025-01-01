@@ -123,7 +123,13 @@ int main() {
         cout << "2. Display Drugs\n";
         cout << "3. Sell Drug\n";
         cout << "4. Display Sales\n";
-        
+        cout << "5. Create Prescription\n";
+        cout << "6. Display Prescriptions\n";
+        cout << "0. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+       
     } while (choice != 0);
 
     return 0;
