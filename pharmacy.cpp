@@ -118,7 +118,12 @@ int main() {
     int choice;
 
     do {
-       
+        cout << "\nPharmacy Management System\n";
+        cout << "1. Add Drug\n";
+        cout << "2. Display Drugs\n";
+        cout << "3. Sell Drug\n";
+        cout << "4. Display Sales\n";
+        
     } while (choice != 0);
 
     return 0;
